@@ -3,14 +3,29 @@
 </script>
 
 <!-- We will cover buttons later on! -->
-<button class="btn btn-secondary" on:click={() => (current = "messi")}>
+<button
+  class={current === "messi" ? "selected btn" : "btn btn-secondary"}
+  on:click={() => (current = "messi")}
+>
   Messi
 </button>
 
-<button class="btn btn-secondary" on:click={() => (current = "ronaldo")}>
+<button
+  class={current === "ronaldo" ? "selected btn" : "btn btn-secondary"}
+  on:click={() => (current = "ronaldo")}
+>
   Ronaldo
 </button>
 
-<button class="btn btn-secondary" on:click={() => (current = "neymar")}>
+<button
+  class={current === "neymar" ? "selected btn" : "btn btn-secondary"}
+  on:click={() => (current = "neymar")}
+>
   Neymar
 </button>
+
+<style>
+  .selected {
+    background-color: rgb(101, 142, 60);
+  }
+</style>
