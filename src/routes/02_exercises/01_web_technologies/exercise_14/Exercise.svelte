@@ -26,6 +26,6 @@
 
 <style>
   .selected {
-    background-color: rgb(101, 142, 60);
+    background-color: rgb(49, 72, 164);
   }
 </style>
